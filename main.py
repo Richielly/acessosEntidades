@@ -4,18 +4,18 @@ from time import sleep as s
 
 #url = 'http://187.95.124.224:7474/'
 urls =[]
-urls = st.text_input('Informe a Url')
 sistemas = ['esadmin','stp','scf','srh','stm']
-
-arquivo = open('urls.txt','a')
-arquivo.write(urls + "\n")
-arquivo.close()
+with st.beta_expander("Cadastrar Url"):
+    urls = st.text_input('Informe a Url')
+    arquivo = open('urls.txt','a')
+    arquivo.write(urls + "\n")
+    arquivo.close()
 
 if st.button("Verificar") :
-
+    urls = open('urls.txt', 'r')
     for url in urls:
-        print(url)
         for sistema in sistemas:
+            print("Teste",url+sistema)
             resposta = requests.get(str(url)+sistema)
             if (resposta.status_code == 200):
                 st.success("Sistema " + sistema.upper() + " no Ar.")

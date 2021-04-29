@@ -1,4 +1,1 @@
-'http://riobrancodosulpr.equiplano.com.br:7474/','http://riobrancodosulpr.equiplano.com.br:7474/'
-'http://riobrancodosulpr.equiplano.com.br:7474/','http://riobrancod
-'http://riobrancodosulpr.equiplano.com.br:7474/','h
-'http://riobrancodosulpr.equiplano.com.br:7474/','h
+http://balsanovapr.equiplano.com.br:7474/
